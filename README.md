@@ -1,16 +1,66 @@
-# React + Vite
+# Personal Profile Website
+A modern personal profile web application built with **React.js** to showcase my background, skills, and professional experience in a clean and responsive interface.
+This project is designed as a detailed profile page, focusing on performance, scalability, and modern front-end development best practices.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tech Stack
+- **React.js** – Component-based JavaScript library for building user interfaces  
+- **Vite** – Fast development server and optimized build tool  
+- **Tailwind CSS** – Utility-first CSS framework for responsive design  
+- **React Icons** – Icon library for enhanced UI/UX  
+- **pnpm** – Efficient and fast package manager  
 
-Currently, two official plugins are available:
+# Features
+- Responsive and modern UI design  
+- Detailed personal profile sections  
+- Clean and reusable React components  
+- Optimized performance with Vite  
+- Easy-to-maintain code structure  
+- Mobile-friendly layout  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Project Structure
+├── src
+│ ├── components
+│ ├── pages
+│ ├── assets
+│ ├── App.jsx
+│ └── main.jsx
+├── public
+├── index.html
+├── package.json
+└── tailwind.config.js
 
-## React Compiler
+# Installation & Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Make sure you have **Node.js** and **pnpm** installed.
 
-## Expanding the ESLint configuration
+1. Clone the repository:
+```bash
+git clone https://github.com/username/repository-name.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+cd repository-name
+
+pnpm install
+
+pnpm run dev
+
+http://localhost:5173
+
+Build for Production
+
+To create an optimized production build:
+
+pnpm run build
+
+pnpm run preview
+
+Purpose
+
+This project serves as a personal portfolio and profile page, demonstrating my front-end development skills, design approach, and experience with modern React tools and workflows.
+
+License
+
+This project is open source and available under the MIT License.
+
+Author
+Hangger Hidayanto
+Frontend Developer
