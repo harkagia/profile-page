@@ -17,18 +17,6 @@ This project is designed as a detailed profile page, focusing on performance, sc
 - Easy-to-maintain code structure  
 - Mobile-friendly layout  
 
-# Project Structure
-├── src
-│ ├── components
-│ ├── pages
-│ ├── assets
-│ ├── App.jsx
-│ └── main.jsx
-├── public
-├── index.html
-├── package.json
-└── tailwind.config.js
-
 # Installation & Setup
 
 Make sure you have **Node.js** and **pnpm** installed.
