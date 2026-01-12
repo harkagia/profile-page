@@ -12,7 +12,7 @@ const Navbar = () => {
 
             section.forEach((section) => {
                 const sectionTop = section.offsetTop;
-                if (window.pageXOffset >= sectionTop - 200) {
+                if (window.scrollY >= sectionTop - 200) {
                     current = section.id;
                 }
             });
@@ -23,13 +23,13 @@ const Navbar = () => {
     }, []);
     return (
         <Fragment>
-            <nav className="fixed bg-black top-0 w-full z-50 backdrop-blur-sm border-b border-white/20 px-3 transition-all">
-                <div className="container mx-auto px-6 flex justify-between items-center">
+            <nav className="fixed bg-transparent top-0 w-full py-2 z-50 backdrop-blur-sm border-b border-white/20 px-3 transition-all">
+                <div className="container mx-auto flex items-center justify-between px-6">
                     <div className="text-2xl text-outline font-bold">Coder</div>
-                    <ul className="hidden sm:flex space-x-8 text-white text-sm font-light uppercase">
+                    <ul className="hidden md:flex space-x-8 text-white text-sm font-light uppercase">
                         {
                             navItems.map((item) => (
-                                <li className={`hover:text-teal-500 transition-colors ${activeSection === item.id ? 'text-teal-400' : ''}`}>
+                                <li key={item.id} className={`hover:text-teal-500 cursor-pointer transition-colors ${activeSection === item.id ? 'text-teal-400' : ''}`}>
                                     {item.label}
                                 </li>
                             ))
