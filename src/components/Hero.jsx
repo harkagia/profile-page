@@ -1,4 +1,7 @@
+import { FaFacebook } from "react-icons/fa";
 import AnimatedTitles from "../utils/AnimatedTitles";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { LiaLinkedin } from "react-icons/lia";
 
 const Hero = () => {
   return (
@@ -22,6 +25,30 @@ const Hero = () => {
             <span className="px-4 py-2 bg-white/10 backdrop-blur-md rounded-full">React</span>
             <span className="px-4 py-2 bg-white/10 backdrop-blur-md rounded-full">Node.js</span>
             <span className="px-4 py-2 bg-white/10 backdrop-blur-md rounded-full">JavaScript</span>
+          </div>
+
+          <div className="flex text-gray-400 gap-5 mt-8 justify-center md:justify-start">
+            <div className="p-3 bg-white/10 rounded-full hover:bg-teal-400 transition-colors">
+              <FaFacebook/>
+            </div>
+            <div className="p-3 bg-white/10 rounded-full hover:bg-teal-400 transition-colors">
+              <BsWhatsapp/>
+            </div>
+            <div className="p-3 bg-white/10 rounded-full hover:bg-teal-400 transition-colors">
+              <LiaLinkedin/>
+            </div>
+            <div className="p-3 bg-white/10 rounded-full hover:bg-teal-400 transition-colors">
+              <BsInstagram/>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <button className="px-6 py-2 text-sm cursor-pointer rounded-full bg-linear-to-r from-teal-400 to-teal-700 font-light text-white hover:opacity-70 transition-opacity">
+              View My Works
+            </button>
+            <button className="px-6 py-2 text-sm cursor-pointer rounded-full bg-white/10 backdrop-blur-md font-light text-white hover:opacity-70 transition-opacity">
+              Download CV
+            </button>
           </div>
         </div>
       </div>
